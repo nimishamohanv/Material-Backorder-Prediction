@@ -204,6 +204,7 @@ def main():
           st.error('Alert: This Product is under backorder risk..!')
     if st.sidebar.button("Show sample data"):
        df = pd.read_csv("sample_df.csv")
+       df=df.T
        st.sidebar.dataframe(df)
 
    
